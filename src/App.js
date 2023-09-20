@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(() => {
     const data = {
-      name: "Rahul",
+      name: "Akash",
     };
     setUserName(data.name);
   }, []);
@@ -59,7 +59,7 @@ const App = () => {
             <Route path="/*" element={<Error />} />
           </Routes>
         </UserContext.Provider>
-        <UserContext.Provider value={{ loggedInUser: "Rahul Chavan" }}>
+        <UserContext.Provider value={{ loggedInUser: "Akash Maddheshiya" }}>
           {/* Rahul Chavan */}
           <Footer />
         </UserContext.Provider>

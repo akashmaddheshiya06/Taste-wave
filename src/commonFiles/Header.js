@@ -1,4 +1,4 @@
-// import { LOGO_IMG } from "../utils/common";
+
 import { useState, useContext } from "react";
 import { FiArrowDown } from "react-icons/fi";
 import { FaUserCircle } from "react-icons/fa";
@@ -33,8 +33,7 @@ const Header = () => {
       <div className="navbar">
         <div className="logo">
           <Link className="logolink" to="/">
-            {/* <img width="200px" height="70px" src={LOGO_IMG} alt="food-logo" /> */}
-            {/* <h3>Namaste Food</h3> */}
+           
             <h1>
               <MdFastfood
                 style={{
@@ -44,17 +43,15 @@ const Header = () => {
                 }}
               />
               <span className="logonamaste" style={{ fontSize: "20px", fontWeight: "bolder" }}>
-                Namaste Food <PiHandsPrayingFill style={{ fontSize: "24px", fontWeight: "bolder" }} /> 
-                {/* <MdDeliveryDining */}
-                  {/* style={{ fontSize: "24px", fontWeight: "bolder" }} */}
-                {/* /> */}
+                Taste Wave <PiHandsPrayingFill style={{ fontSize: "24px", fontWeight: "bolder" }} /> 
+               
               </span>
             </h1>
           </Link>
           <div className="current-location">
-            <p className="mainAddress">PUNE</p>
+            <p className="mainAddress">Noida</p>
             <p className="addresss">
-              406, Siddhi Complex Pune-412308
+              Noida sector 62 Metro station
               <FiArrowDown style={{ color: "orangered", fontWeight: "bold" }} />
             </p>
           </div>

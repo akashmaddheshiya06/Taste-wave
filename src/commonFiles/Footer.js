@@ -12,6 +12,8 @@ import {
   SKYPE_URL,
 } from "../utils/social_links";
 import { BiLogoGmail } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
+
 import {
   TiSocialLinkedin,
   TiSocialSkype,
@@ -35,24 +37,18 @@ const Footer = () => {
         Created by {loggedInUser} © 2023 Namaste React  <span className="social" onClick={() => navigate({ GMAIL_URL })}>
           <BiLogoGmail to={GMAIL_URL} />
         </span>
-        <span className="social" onClick={() => navigate({LINKEDIN_URL})}>
-          <TiSocialLinkedin />
-        </span>
-        <span className="social" onClick={() => navigate({SKYPE_URL})}>
-          <TiSocialSkype />
-        </span>
-        <span className="social" onClick={() => navigate({TWITTER_URL})}>
-          <TiSocialTwitter />
-        </span>
-        <span className="social" onClick={() => navigate({FACEBOOK_URL})}>
-          <TiSocialFacebook />
-        </span>
-        <span className="social" onClick={() => navigate({INSTAGRAM_URL})}>
-          <TiSocialInstagram />
-        </span>
-        <span className="social" onClick={() => navigate(YOUTUBE_URL)}>
-          <TiSocialYoutube />
-        </span> 
+        <span className="social" onClick={() => window.location.href = 'https://www.instagram.com/___akash45____/'}>
+        <TiSocialInstagram />
+         </span>
+
+        <span className="social" onClick={() => window.location.href = 'https://www.linkedin.com/in/akashmaddhehsiya06/'}>
+        <TiSocialLinkedin/>
+         </span>
+
+        <span className="social" onClick={() => window.location.href = 'https://github.com/akashmaddheshiya06'}>
+        <BsGithub/>
+         </span>
+
       </p>
     </div>
     </>
